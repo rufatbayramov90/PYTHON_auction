@@ -19,13 +19,24 @@ for stud in students:
 print(student_grades)
 '''
 
+from replit import clear
 
 from art import logo
-
 print(logo)
 
-name = input("What is your name?")
-price = input("What is your bid?")
+bids ={}
+bidding_finish = False
+
+while not bidding_finish:
+    name = input("What is your name?")
+    price = input("What is your bid?  $")
+    bids[name] = price
+    should_continue = input("Are there any other bidders? yes or no")
+    if should_continue == "no":
+        bidding_finish = True
+    elif should_continue == "yes":
+        clear()
+
     
 
 
