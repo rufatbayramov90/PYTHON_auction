@@ -1,4 +1,4 @@
-students ={
+'''students ={
     "Hanry": 81,
     "Alvera" : 75,
     "Cohn" : 99,
@@ -17,6 +17,15 @@ for stud in students:
     else:
         student_grades[stud] = "You failed the exam"
 print(student_grades)
+'''
+
+
+from art import logo
+
+print(logo)
+
+name = input("What is your name?")
+price = input("What is your bid?")
     
 
 
